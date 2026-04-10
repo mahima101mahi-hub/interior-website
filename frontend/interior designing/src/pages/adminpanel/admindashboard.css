@@ -1,0 +1,78 @@
+/* ================= DASHBOARD ================= */
+.dashboard {
+  padding: 20px;
+}
+
+/* TITLE */
+.dash-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ================= STATS ================= */
+.stats-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  color: #1f1f1f;
+}
+
+.stat-card p {
+  color: #777;
+}
+
+/* ================= RECENT ================= */
+.section-title {
+  margin-bottom: 15px;
+}
+
+.recent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.recent-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.recent-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.recent-card p {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+}

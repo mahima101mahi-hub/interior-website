@@ -1,0 +1,63 @@
+.manage-container {
+  padding: 20px;
+}
+
+/* FORM */
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-section input,
+.form-section select {
+  padding: 8px;
+}
+
+.preview-img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+/* TABLE */
+.design-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.design-table thead {
+  background:  #5a2d1f;
+  color: white;
+}
+
+.design-table th,
+.design-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.table-img {
+  width: 70px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.design-table tbody tr:hover {
+  background: #f5f5f5;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}

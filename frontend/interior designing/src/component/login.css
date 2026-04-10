@@ -1,0 +1,115 @@
+/* ========== Full Page Background ========== */
+.form-box1 {
+  height: 100vh;
+  width: 100%;
+  background: 
+    linear-gradient(rgba(40, 25, 15, 0.65), rgba(40, 25, 15, 0.65)),
+    url("/image/industrial-rustic-living-room-in-earthy-tones.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========== Glass Interior Card ========== */
+.form_login {
+  width: 380px;
+  padding: 40px;
+  border-radius: 25px;
+
+  background: rgba(139, 94, 60, 0.35);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 
+    0 25px 45px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  color: #f5e6d3;
+  transition: 0.4s ease;
+}
+
+/* Hover lift effect */
+.form_login:hover {
+  transform: translateY(-8px);
+}
+
+/* Heading */
+.form_login p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #ffe6c7;
+}
+
+/* Labels */
+.form_login label {
+  margin-bottom: 6px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+/* Input Wrapper */
+.input-box1 {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 240, 220, 0.9);
+  border-radius: 15px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+/* Icon */
+.icon {
+  color: #8b5e3c;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Input */
+.input-box1 input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 13px 0;
+  font-size: 14px;
+  outline: none;
+  color: #4e2f1c;
+}
+
+/* Focus effect */
+.input-box1:focus-within {
+  box-shadow: 0 0 15px rgba(210, 166, 121, 0.7);
+  transform: scale(1.03);
+}
+
+/* Button */
+.form_login button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 18px;
+  border: none;
+
+  background: linear-gradient(135deg, #d2a679, #8b5e3c);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+
+/* Button hover */
+.form_login button:hover {
+  background: linear-gradient(135deg, #c68c53, #6b3f23);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}

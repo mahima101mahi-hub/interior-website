@@ -1,0 +1,159 @@
+/* ========== Full Page Background ========== */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(245, 241, 235, 0.7), rgba(245, 241, 235, 0.7)),
+    url("/image/profie.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ========== Glass Profile Card ========== */
+.small-dark-card {
+  width: 380px;
+  border-radius: 25px;
+  padding: 30px;
+  
+  background: yellowgreen; /* soft brown glass */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  color: #1f0e04;
+  transition: 0.4s ease;
+}
+
+/* Hover lift effect */
+.small-dark-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* Header */
+.card-header-dark {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.mini-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #d2a679;
+  object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.header-text h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff1e0;
+}
+.user-role-tag {
+  margin-top: 5px;
+  display: inline-block;
+  background: linear-gradient(135deg, #d2a679, #8b5e3c);
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Body */
+.card-body-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data-label {
+  font-weight: 600;
+  color: #ffe6c7;
+}
+.data-value {
+  font-weight: 500;
+  color: #fff1e0;
+  text-align: right;
+}
+.address {
+  max-width: 220px;
+  word-wrap: break-word;
+}
+
+/* Footer Buttons */
+.mini-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 10px;
+}
+.mini-footer button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+/* Logout Button */
+.logout-red {
+  background: linear-gradient(135deg, #d2691e, #8b5e3c);
+  color: #fff;
+}
+.logout-red:hover {
+  background: linear-gradient(135deg, #e07b3b, #9b6b4b);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Appointment Button */
+.mini-footer button:nth-child(2) {
+  background: linear-gradient(135deg, #c9a66b, #d2b78f);
+  color: #4e2f1c;
+}
+.mini-footer button:nth-child(2):hover {
+  background: linear-gradient(135deg, #d4b17d, #e3c49f);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .small-dark-card {
+    width: 90%;
+    padding: 25px;
+  }
+  .card-header-dark {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .data-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .data-value {
+    text-align: left;
+    margin-top: 4px;
+  }
+  .mini-footer {
+    flex-direction: column;
+  }
+}

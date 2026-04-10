@@ -1,0 +1,186 @@
+/* GLOBAL RESET */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f3f0;
+}
+
+/* MAIN CONTAINER */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f3f0, #e8e4df);
+}
+
+/* SIDEBAR */
+.admin-sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #3b1d14, #6b3a2c);
+  color: white;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.admin-sidebar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* SIDEBAR LINKS */
+.admin-sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+  color: #f5e9e2;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.admin-sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+/* ACTIVE LINK (optional if you add NavLink later) */
+.admin-sidebar nav a.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* LOGOUT BUTTON */
+.logout {
+  background: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  color: #6b3a2c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* CONTENT AREA */
+.admin-content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* HEADING */
+.admin-content h1 {
+  margin-bottom: 10px;
+}
+
+/* DASHBOARD CARDS */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 32px;
+  margin: 0;
+  color: #3b1d14;
+}
+
+.card p {
+  color: gray;
+  margin-top: 5px;
+}
+
+/* RECENT DESIGNS */
+.design-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.design-card {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  width: 160px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.design-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.design-card p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.design-card:hover {
+  transform: scale(1.05);
+}
+
+/* SCROLLBAR (optional styling) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 180px;
+  }
+
+  .admin-content {
+    padding: 15px;
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .design-grid {
+    justify-content: center;
+  }
+}

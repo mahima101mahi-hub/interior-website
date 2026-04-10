@@ -1,0 +1,126 @@
+/* PAGE CONTAINER */
+.appointment-container {
+  padding: 30px;
+  background: #f5f2ef;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.appointment-container h2 {
+  color: #5a2d1f;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* TABLE */
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.appointment-table thead {
+  background: linear-gradient(to right, #5a2d1f, #7a3d2a);
+  color: white;
+}
+
+.appointment-table th {
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* BODY */
+.appointment-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* ROW HOVER */
+.appointment-table tbody tr:hover {
+  background: #f9f6f3;
+}
+
+/* STATUS */
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* STATUS COLORS */
+.status.Pending {
+  background: #f3c38b;
+  color: #5a2d1f;
+}
+
+.status.Confirmed {
+  background: #5a2d1f;
+  color: white;
+}
+
+/* ✅ FIX BUTTON ALIGNMENT */
+.appointment-table td:last-child {
+  white-space: nowrap; /* keeps buttons in one line */
+}
+
+/* BUTTON BASE */
+.confirm-btn,
+.delete-btn {
+  display: inline-block;
+  margin: 3px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* CONFIRM BUTTON */
+.confirm-btn {
+  background: #5a2d1f;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #7a3d2a;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: #c0392b;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #e74c3c;
+}
+
+/* DISABLED BUTTON */
+.confirm-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .appointment-table th,
+  .appointment-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .confirm-btn,
+  .delete-btn {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+}

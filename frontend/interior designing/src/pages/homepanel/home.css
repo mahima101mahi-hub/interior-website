@@ -1,0 +1,290 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f1eb;
+  color: #2b1d1a;
+}
+
+.home-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= HERO / SLIDER ================= */
+.hero-container {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  height: 85vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* TEXT */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.slide-content h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.hero-btn {
+  padding: 12px 25px;
+  border: none;
+  background: #d4a373;
+  color: #2b1d1a;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #c18b5d;
+}
+
+/* SLICK FIX */
+.slick-slider,
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+}
+
+/* ================= INTRO ================= */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.intro h2 {
+  font-size: 36px;
+}
+
+.intro p {
+  color: #666;
+}
+
+/* ================= GALLERY ================= */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CARD */
+.gallery-grid .card {
+  flex: 0 0 calc(33.33% - 25px);
+  max-width: calc(33.33% - 25px);
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.gallery-grid .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  margin-bottom: 15px;
+  color: #a67c52;
+  font-weight: 600;
+}
+
+/* ================= ABOUT (MODERN) ================= */
+.about {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #f9f6f2, #f3ece4);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* TEXT */
+.about-text h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #d4a373;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #5c4b44;
+  margin-bottom: 15px;
+}
+
+/* HIGHLIGHTS */
+.about-highlights {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: #58281d;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.highlight:hover {
+  background: #d4a373;
+  transform: translateY(-3px);
+}
+
+/* IMAGE */
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  transition: 0.4s;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 100%;
+  height: 100%;
+  background: #e8d8c3;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .gallery-grid .card {
+    flex: 0 0 calc(50% - 25px);
+    max-width: calc(50% - 25px);
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slide-content {
+    left: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .slide-content h2 {
+    font-size: 26px;
+  }
+
+  .slide-content p {
+    font-size: 14px;
+  }
+}

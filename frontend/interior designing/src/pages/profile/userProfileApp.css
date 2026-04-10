@@ -1,0 +1,93 @@
+/* Container */
+.container {
+  padding: 30px;
+  background: linear-gradient(to right, #eef2f7, #f9fbfd);
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Heading */
+.heading {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* Grid */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  padding: 18px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Text */
+.card p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* STATUS SECTION (MAIN HIGHLIGHT) */
+.status-wrapper {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Badge Base */
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* GLOW EFFECTS */
+.status-confirmed {
+  background: #28a745;
+  box-shadow: 0 0 10px #28a745;
+}
+
+.status-cancelled {
+  background: #dc3545;
+  box-shadow: 0 0 10px #dc3545;
+}
+
+.status-completed {
+  background: #007bff;
+  box-shadow: 0 0 10px #007bff;
+}
+
+.status-pending {
+  background: #ff9800;
+  box-shadow: 0 0 10px #ff9800;
+}
+
+/* Loading */
+.loading {
+  margin-top: 50px;
+  font-size: 18px;
+}
