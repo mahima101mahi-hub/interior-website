@@ -10,7 +10,7 @@ import { LogContext } from './context/logincontext';
 import Home from './pages/homepanel/home';
 import Theme from './pages/Theme/themes';
 import Type from './pages/Theme/themetype';
-import Appoinmnet from './pages/Appoinment/Appoinment';
+import Appoinmnet from './pages/Appoinment/appoinment';
 import Contact from './pages/contact/contact';
 import AdminLayout from './pages/adminpanel/adminLayout';
 import Dashboard from './pages/adminpanel/admindashboard';
