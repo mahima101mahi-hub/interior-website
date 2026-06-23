@@ -17,7 +17,7 @@ export async function contact(req,res) {
                 Message
             })
             await inquiryOption.save()
-            return res.status(201).send("added succesfully")
+            return res.status(201).send("added succesfull")
     } catch (error) {
         console.log(error);
         return res.status(500).send("INTERNAL SERVER ERROR")
