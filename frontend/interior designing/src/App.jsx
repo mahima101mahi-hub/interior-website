@@ -48,7 +48,7 @@ function App() {
         <Route path='/appoinmnet' element={<Appoinmnet />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/profile' element={<Profile />} />
-        <Route path='/UserApponintment' element={<UserApponintment />} />
+        <Route path='/UserApponintment' element={<UserApponintment/>} />
 
         {/* Admin Routes */}
         <Route path='/admin' element={<AdminLayout />}>
